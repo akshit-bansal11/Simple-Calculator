@@ -96,6 +96,11 @@ h1 {
 	height: 100%;
 	background-color: #272727;
 	border: solid 3px orange;
+	color: rgb(255, 255, 255);
+	padding: 10px;
+	font-size: 20px;
+	font-family: cursive;
+	font-weight: 100;
 }
 
 .grid_container {
@@ -112,35 +117,33 @@ h1 {
 	background-color: transparent;
 }
 
-.grid-item button {
+button {
 	width: 100%;
 	border: none;
 	height: 100%;
 	font-family: cursive;
 	background-color: #272727;
+	border: transparent 1px solid;
+	transition: all ease 80ms;
+	color: orange;
+	font-size: 20px;
 }
 
-.grid_container div:nth-child(1){
-	grid-column-start: 1;
-	grid-column-end: 3;
-	
+button:hover {
+	background-color: #333333;
 }
-.grid_container div:nth-child(18){
+
+button:active {
+	background-color: rgb(74, 74, 74);
+}
+
+.grid_container div:nth-child(19){
 	grid-column-start: 3;
 	grid-column-end: 5;
 }
 
-.operation {
-	color: rgb(0, 217, 255);
-	font-size: 20px;
-}
-
-.number {
-	color: orange;
-	font-size: 30px;
-}
-.number:hover, .operation:hover {
-	background-color: #333333;
+.fa-equals, .fa-circle, .fa-percent, .fa-xmark, .fa-divide, .fa-plus, .fa-circle-xmark, .fa-delete-left {
+	color: rgb(0, 153, 255);
 }
 
 .fa-circle{
