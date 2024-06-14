@@ -66,15 +66,85 @@ body
 .calc-card
 {
 	position: absolute;
-	width: 700px;
-    background: #222;  
+	width: 400px;
+	height: 600px;
+    background: #2f2f2f;  
 	z-index: 1000;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 40px;
-	border-radius: 4px;
+	padding: 30px 40px 40px 40px;
 	box-shadow: 0 15px 35px rgba(0,0,0,9);
+}
+
+h1 {
+	color: orange;
+	font-family:fantasy;
+	letter-spacing: 2px;
+	font-weight: lighter;
+	margin-bottom: 40px;
+}
+
+.result_box_container {
+	width: 100%;
+	height: 70px;
+}
+
+.result_box_container input {
+	width: 100%;
+	height: 100%;
+	background-color: #272727;
+	border: solid 3px orange;
+}
+
+.grid_container {
+	display: grid;
+	color: white;
+	grid-template-columns: auto auto auto auto;
+	width: 100%;
+	height: 100%;
+	gap: 10px;
+}
+
+.grid-item {
+	width: 100%;
+	background-color: transparent;
+}
+
+.grid-item button {
+	width: 100%;
+	border: none;
+	height: 100%;
+	font-family: cursive;
+	background-color: #272727;
+}
+
+.grid_container div:nth-child(1){
+	grid-column-start: 1;
+	grid-column-end: 3;
+	
+}
+.grid_container div:nth-child(18){
+	grid-column-start: 3;
+	grid-column-end: 5;
+}
+
+.operation {
+	color: rgb(0, 217, 255);
+	font-size: 20px;
+}
+
+.number {
+	color: orange;
+	font-size: 30px;
+}
+.number:hover, .operation:hover {
+	background-color: #333333;
+}
+
+.fa-circle{
+	font-size: 10px;
 }
 
 
