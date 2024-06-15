@@ -142,7 +142,7 @@ button:active {
 	grid-column-end: 5;
 }
 
-.fa-equals, .fa-circle, .fa-percent, .fa-xmark, .fa-divide, .fa-plus, .fa-circle-xmark, .fa-delete-left {
+.fa-equals, .fa-circle, .fa-percent, .fa-xmark, .fa-divide, .fa-plus, .fa-circle-xmark, .fa-delete-left, .fa-minus {
 	color: rgb(0, 153, 255);
 }
 

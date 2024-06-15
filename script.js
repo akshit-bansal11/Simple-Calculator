@@ -19,6 +19,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 inputBox.value = eval(inputBox.value);
             }
 
+            else if (btnvalue === "%") {
+                inputBox.value = (inputBox.value/100) + "*";
+            }
+
             else {
                 inputBox.value += this.value;
             }
